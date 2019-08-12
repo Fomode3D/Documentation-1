@@ -18,16 +18,16 @@ Ubuntu 18.04
 
 .. code-block:: console
 
-   $  wget https://github.com/Remmeauth/remprotocol/releases/download/v0.1.0/remprotocol_0.1.0-ubuntu-18.04_amd64.deb && \
-         sudo dpkg -i ./remnode_0.1.0-ubuntu-18.04_amd64.deb
+   $ wget https://github.com/Remmeauth/remprotocol/releases/download/v0.1.0/remmeprotocol_0.1.0-ubuntu-18.04_amd64.deb && \
+         sudo dpkg -i ./remmeprotocol_0.1.0-ubuntu-18.04_amd64.deb
 
 Step 2: boot node and wallet
 ============================
 
-Start keosd
------------
+Start remvault
+--------------
 
-Start ``keosd``:
+Start ``remvault``:
 
 .. code-block:: console
 
@@ -46,10 +46,10 @@ You will see an output similar to the one below:
 
 Press enter to continue.
 
-Start nodeos
+Start remnode
 ------------
 
-Start ``nodeos``. This command loads all the basic plugins, set the server address, enable |cors_reference_mozzila|
+Start ``remnode``. This command loads all the basic plugins, set the server address, enable |cors_reference_mozzila|
 (with no restrictions and development logging) and add some contract debugging and logging.
 
 .. |cors_reference_mozzila| raw:: html
@@ -72,8 +72,8 @@ Start ``nodeos``. This command loads all the basic plugins, set the server addre
     In the above configuration, ``CORS`` is enabled for ``*`` for development purposes only, you should never enable
     ``CORS`` for ``*`` on a node that is publicly accessible!
 
-Step 3: check that nodeos is producing blocks
-=============================================
+Step 3: check that remnode is producing blocks
+==============================================
 
 Run the following command:
 
@@ -98,17 +98,6 @@ You will see an output similar to the one below:
 
 Press ``ctrl`` + ``c`` to close an output.
 
-
-
-
-
-git clone -b block-producer-swap-bot --single-branch https://github.com/Remmeauth/remprotocol.git
-
-cd remprotocol/block_producer_swap_bot
-
-sudo ./install.sh
-
-
 Step 3: check the wallet
 ========================
 
@@ -125,8 +114,8 @@ You will see an output similar to the one below:
     $ Wallets:
     []
 
-Step 4: check nodeos endpoints
-==============================
+Step 4: check remnode endpoints
+===============================
 
 Run the following command, this will check that the ``RPC API`` is working correctly:
 

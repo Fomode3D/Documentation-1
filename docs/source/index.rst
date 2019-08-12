@@ -11,6 +11,7 @@ Welcome to Remme Protocol documentation!
 
    introduction
    getting-started
+   testnet
    faucet
    monitoring
    troubleshooting
