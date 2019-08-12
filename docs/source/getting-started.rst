@@ -18,7 +18,7 @@ Ubuntu 18.04
 
 .. code-block:: console
 
-   $  wget https://github.com/Remmeauth/remprotocol/releases/download/v0.1.0/remnode_0.1.0-ubuntu-18.04_amd64.deb && \
+   $  wget https://github.com/Remmeauth/remprotocol/releases/download/v0.1.0/remprotocol_0.1.0-ubuntu-18.04_amd64.deb && \
          sudo dpkg -i ./remnode_0.1.0-ubuntu-18.04_amd64.deb
 
 Step 2: boot node and wallet
@@ -97,6 +97,17 @@ You will see an output similar to the one below:
     1933501ms thread-0   producer_plugin.cpp:585       block_production_loo ] Produced block 0000367257fe1623... #13938 @ 2018-05-23T16:32:13.500 signed by eosio [trxs: 0, lib: 13937, confirmed: 0]
 
 Press ``ctrl`` + ``c`` to close an output.
+
+
+
+
+
+git clone -b block-producer-swap-bot --single-branch https://github.com/Remmeauth/remprotocol.git
+
+cd remprotocol/block_producer_swap_bot
+
+sudo ./install.sh
+
 
 Step 3: check the wallet
 ========================

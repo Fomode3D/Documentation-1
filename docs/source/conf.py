@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Remme Protocol Developers Portal'
+project = 'Remme Protocol documentation'
 copyright = '2019, Remme'
 author = 'Remme'
 
@@ -103,7 +103,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RemmeProtocolDevelopersPortaldoc'
+htmlhelp_basename = 'RemmeProtocolDocumentationdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,7 +130,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'RemmeProtocolDevelopersPortal.tex', 'Remme Protocol Developers Portal Documentation',
+    (master_doc, 'RemmeProtocolDocumentation.tex', 'Remme Protocol Documentation',
      'Remme', 'manual'),
 ]
 
@@ -140,7 +140,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'remmeprotocoldevelopersportal', 'Remme Protocol Developers Portal Documentation',
+    (master_doc, 'remmeprotocoldevelopersportal', 'Remme Protocol Documentation',
      [author], 1)
 ]
 
@@ -151,8 +151,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RemmeProtocolDevelopersPortal', 'Remme Protocol Developers Portal Documentation',
-     author, 'RemmeProtocolDevelopersPortal', 'One line description of project.',
+    (master_doc, 'RemmeProtocolDocumentation', 'Remme Protocol Documentation',
+     author, 'RemmeProtocolDocumentation', 'One line description of project.',
      'Miscellaneous'),
 ]
 
