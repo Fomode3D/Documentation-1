@@ -13,45 +13,13 @@ Step 1: install binaries
 If you have previous versions of ``Remme protocol`` installed on your machine, please uninstall before proceeding.
 Detailed instructions are below.
 
-MacOS
------
-
-.. code-block:: console
-
-   $ brew tap eosio/eosio && \
-         brew install eosio
-
 Ubuntu 18.04
 ------------
 
 .. code-block:: console
 
-   $ wget https://github.com/EOSIO/eos/releases/download/v1.7.0/eosio_1.7.0-1-ubuntu-18.04_amd64.deb && \
-         sudo apt install ./eosio_1.7.0-1-ubuntu-18.04_amd64.deb
-
-Ubuntu 16.04
-------------
-
-.. code-block:: console
-
-   $ wget https://github.com/EOSIO/eos/releases/download/v1.7.0/eosio_1.7.0-1-ubuntu-16.04_amd64.deb && \
-         sudo apt install ./eosio_1.7.0-1-ubuntu-16.04_amd64.deb
-
-CentOS
-------
-
-.. code-block:: console
-
-   $ wget https://github.com/EOSIO/eos/releases/download/v1.7.0/eosio-1.7.0-1.el7.x86_64.rpm && \
-         sudo yum install ./eosio-1.7.0-1.el7.x86_64.rpm
-
-Fedora
-------
-
-.. code-block:: console
-
-   $ wget https://github.com/EOSIO/eos/releases/download/v1.7.0/eosio-1.7.0-1.fc27.x86_64.rpm && \
-         sudo yum install ./eosio-1.7.0-1.fc27.x86_64.rpm
+   $  wget https://github.com/Remmeauth/remprotocol/releases/download/v0.1.0/remnode_0.1.0-ubuntu-18.04_amd64.deb && \
+         sudo dpkg -i ./remnode_0.1.0-ubuntu-18.04_amd64.deb
 
 Step 2: boot node and wallet
 ============================
@@ -63,18 +31,18 @@ Start ``keosd``:
 
 .. code-block:: console
 
-   $ keosd &
+   $ remvault &
 
 You will see an output similar to the one below:
 
 .. code-block:: console
 
-   info  2018-11-26T06:54:24.789 thread-0  wallet_plugin.cpp:42          plugin_initialize    ] initializing wallet plugin
-   info  2018-11-26T06:54:24.795 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/keosd/stop
-   info  2018-11-26T06:54:24.796 thread-0  wallet_api_plugin.cpp:73      plugin_startup       ] starting wallet_api_plugin
-   info  2018-11-26T06:54:24.796 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/wallet/create
-   info  2018-11-26T06:54:24.796 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/wallet/create_key
-   info  2018-11-26T06:54:24.796 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/wallet/get_public_key
+   info  2019-08-12T13:16:38.388 remvault  http_plugin.cpp:625           add_handler          ] add api url: /v1/remvault/stop
+   info  2019-08-12T13:16:38.389 remvault  http_plugin.cpp:625           add_handler          ] add api url: /v1/node/get_supported_apis
+   info  2019-08-12T13:16:38.389 remvault  wallet_api_plugin.cpp:73      plugin_startup       ] starting wallet_api_plugin
+   info  2019-08-12T13:16:38.389 remvault  http_plugin.cpp:625           add_handler          ] add api url: /v1/wallet/create
+   info  2019-08-12T13:16:38.389 remvault  http_plugin.cpp:625           add_handler          ] add api url: /v1/wallet/create_key
+   info  2019-08-12T13:16:38.389 remvault  http_plugin.cpp:625           add_handler          ] add api url: /v1/wallet/get_public_keys
 
 Press enter to continue.
 
@@ -90,14 +58,14 @@ Start ``nodeos``. This command loads all the basic plugins, set the server addre
 
 .. code-block:: console
 
-   $ nodeos -e -p eosio \
+   $ remnode -e -p rem \
          --plugin eosio::producer_plugin \
          --plugin eosio::chain_api_plugin \
          --plugin eosio::http_plugin \
          --access-control-allow-origin='*' \
          --contracts-console \
          --http-validate-host=false \
-         --verbose-http-errors >> nodeos.log 2>&1 &
+         --verbose-http-errors >> remnode.log 2>&1 &
 
 .. note::
 
@@ -111,7 +79,7 @@ Run the following command:
 
 .. code-block:: console
 
-    tail -f nodeos.log
+    tail -f remnode.log
 
 You will see an output similar to the one below:
 
@@ -137,7 +105,7 @@ Run the following command, we need to validate the installation and check if wal
 
 .. code-block:: console
 
-    $ cleos wallet list
+    $ remcli wallet list
 
 You will see an output similar to the one below:
 
@@ -158,30 +126,9 @@ Run the following command, this will check that the ``RPC API`` is working corre
 Uninstall binaries
 ==================
 
-MacOS
------
-
-.. code-block:: console
-
-   $ brew remove eosio
-
 Ubuntu
 ------
 
 .. code-block:: console
 
-   $ sudo apt remove eosio
-
-CentOS
-------
-
-.. code-block:: console
-
-   $ sudo yum remove eosio
-
-Fedora
-------
-
-.. code-block:: console
-
-   $ sudo yum remove eosio
+   $ sudo dpkg -r remnode
