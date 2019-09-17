@@ -52,7 +52,7 @@ Large scale applications need to divide the workload across multiple CPUs and co
 
 # Consensus Algorithm (BFT-DPOS)
 
-The Remme Protocol software utilizes the only known decentralized consensus algorithm proven capable of meeting the performance requirements of PKI(d) applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper).
+The Remme Protocol software utilizes the only known decentralized consensus algorithm proven capable of meeting the performance requirements of next-gen PKI applications on the blockchain, [Delegated Proof of Stake (DPOS)](https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper).
 Under this algorithm, those who hold a certain amount of tokens on a blockchain adopting the Protocol software may select Block Producers (BPs) through a continuous voting mechanism.
 Anyone who accumulates a minimum required amount of tokens may choose to participate in the block producer election by running for top 21 status or vote for other candidates they trust and feel confident about.
 Active participation in the network's governance (consistent voting and keeping a minimum required token balance staked) is a requirement to get a status of Guardian and participate in the stake reward distribution process. 
