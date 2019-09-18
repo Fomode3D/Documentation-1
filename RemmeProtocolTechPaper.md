@@ -76,9 +76,9 @@ BFT Delegated Proof of Stake is robust under every conceivable natural network d
 
 ## Block Rewards
 
-The block reward is divided in the following proportions:
+The block reward is divided into the following proportions:
 - 60% - **Stake Reward** - Shared between all Guardians proportionally to their stake.
-- 30% - **Vote Reward** - Shared between the Top 25 Block Producers proportionally to the number of votes they received from Guardians (1 staked token = 1 vote).
+- 30% - **Vote Reward** - Shared between the Top 25 Block Producers proportionally to the number of votes they received from Guardians and other accounts (1 staked token = 1 vote).
 - 10% - Remme Savings account
 
 
@@ -88,33 +88,33 @@ BP does not get rewarded for the missed blocks. The claimrewards method credits 
 
 ## How to Become a Guardian
 
-The Guardians play a key role in the Protocol governance process by delegating this responsibility (via voting) to the Top Block Producers.
+The Guardians play a key role in the protocol's governance process by delegating this responsibility (via voting) to the Block Producers.
 In Remme Protocol, there are specific criteria that need to be met by an account to get the Guardian status and participate in stake reward distribution:
 - An account needs to stake a minimum 250k REM
 - Tokens are locked for the first six months (you cannot change your mind once you stake)
 - The power of the vote is built up gradually to 100% over six months on a weekly basis. Note: Guardian earns full and liquid rewards from the start
 
-In order to maintain the Guardian status, each account will have to re-assert their vote every month. With those who do not keep their votes up to date for more than a month:
+In order to maintain the Guardian status, each account will have to re-assert their vote every month. With those that do not keep their votes up to date for more than a month:
 - Account stops getting stake rewards
 - The influence of last recorded vote decays by half every year
 
 In case a Guardian stakes more tokens during the initial locking period, it will increase the locking proportionally.
-For example, an account starts with 100M tokens staked with the initial six month locking period. After 1.5 months they stake an additional 200M tokens. As a result, the locking period is adjusted from the remaining 4.5 months to 5.5 months with a total of 300M tokens staked. 6mon - 6mon*(100M*1.5/6)/(100M+200M) = 5.5mon.
+For example, an account starts with 100M tokens staked with the initial six-month locking period. After 1.5 months they stake an additional 200M tokens. As a result, the locking period is adjusted from the remaining 4.5 months to 5.5 months with a total of 300M tokens staked. 6mon - 6mon*(100M*1.5/6)/(100M+200M) = 5.5mon.
 
 Guardians do not need to operate a full node. Staking, voting and claiming rewards can be done via a light client.
 
 ## How to become a Block Producer
 
-Any account can register as Block Producer by calling **regproducer** action in the system contract. It is expected, that BPs would specify the website as a parameter and this website would contain a bp.json file in the root folder. The bp.json has to be compatible with the standard [described here](https://github.com/eosrio/bp-info-standard). 
+Any account can register as Block Producer by calling the **regproducer** action in the system contract. It is expected, that BPs would specify the website as a parameter and this website would contain a bp.json file in the root folder. The bp.json has to be compatible with the standard [described here](https://github.com/eosrio/bp-info-standard). 
 
 ## Block Producer Elections
 
-There are different groups of Block Producers depending on the number of votes they received from Guardians:
+There are different groups of Block Producers depending on the number of votes they received from Guardians and other accounts:
 - The Top 20: Active BPs responsible for producing and continuously adding new blocks to the blockchain.
-- The Top 21-25: BPs become Active to produce blocks in shifts and rotate every 6 hours. (There is always maximum 21 Active BPs at a given moment)
+- The Top 21-25: BPs become Active to produce blocks in shifts and rotate every six hours. (There is always maximum 21 Active BPs at a given moment)
 - The rest: Standby BPs not producing blocks at a given moment, but may become Active at some point.
 
-Remme Protocol puts voting responsibility on the accounts that expressed their long term engagement via staking REM tokens. Once staked, any account gets the ability to vote (in the proportion of 1 staked token = 1 vote).
+Remme Protocol grants voting responsibility to the accounts that have expressed their long-term engagement via staking REM tokens. Once staked, any account gets the ability to vote (in the proportion of 1 staked token = 1 vote).
 Participants should cast their votes in favor of BPs they trust and believe to be the best candidates to produce blocks responsibly. It is expected that BPs will cast their available votes in their own favor.
 
 Some notes:
