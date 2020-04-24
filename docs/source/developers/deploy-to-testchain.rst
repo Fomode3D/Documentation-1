@@ -116,9 +116,9 @@ Step 3: Deploy Smart Contract to Testchain
 .. note::
     There is no need to run a full node to develop smart contracts, enough to know the address of one of the network nodes.
     Information about the ``Remprotocol Testnet`` services we have already indicated
-    `here <http://0.0.0.0:8080/developers/prerequisites.html#remprotocol-testnet>`_.
+    `here <prerequisites.html#remprotocol-testnet>`_.
 
-We will use the previously created contract `name_validator <http://0.0.0.0:8080/developers/smart-contract-structure.html>`_.
+We will use the previously created contract `name_validator <smart-contract-structure.html>`_.
 
 **Go to your contract directory and then:**
 

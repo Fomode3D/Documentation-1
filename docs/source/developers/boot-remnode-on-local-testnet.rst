@@ -52,7 +52,7 @@ Step 2: Start remnode
 .. note::
     For running local testnet, make sure that you already import to your wallet ``development key``.
     How to configure wallet you can find
-    `here <http://0.0.0.0:8080/developers/development-wallet-configuration.html#step-6-import-the-development-key>`_.
+    `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
 
 .. code-block:: console
 

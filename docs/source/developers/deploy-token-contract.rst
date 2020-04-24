@@ -31,7 +31,7 @@ Step 2: Create Account for Contract
 
 .. note::
     To create an account on a ``Local Testnet``, a ``development key`` must already be imported in your wallet.
-    How to do this you can find `here <http://0.0.0.0:8080/developers/development-wallet-configuration.html#step-6-import-the-development-key>`_.
+    How to do this you can find `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
 
 Crete ``rem.token`` account
 

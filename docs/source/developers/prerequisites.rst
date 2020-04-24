@@ -9,7 +9,7 @@ Blockchain Environments
 |                            Service                            | Description                                                                                   |
 +---------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | `Remprotocol <https://github.com/Remmeauth/remprotocol>`_     | Remprotocol Blockchain source files.                                                          |
-|                                                               | `Install Remprotocol <http://0.0.0.0:8080/developers/preparation-step.html>`_ to get started. |
+|                                                               | `Install Remprotocol <preparation-step.html>`_ to get started.                                |
 +---------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | `Rem.contracts <https://github.com/Remmeauth/rem.contracts>`_ |  | Remprotocol system contracts. Can be used to obtain system tables                          |
 |                                                               |  | by importing contacts.                                                                     |
@@ -20,7 +20,7 @@ Blockchain Environments
 Development Tools
 =================
 
-| We can use any text editor that, preferably, supports C++ syntax highlighting.
+| You can use any text editor that, preferably, supports C++ syntax highlighting.
 | Some popular editors and IDEs:
 
 * `CLion <https://www.jetbrains.com/clion/>`_
@@ -70,4 +70,4 @@ Remprotocol Testnet
 .. note::
     | To use the ``Remchain mainnet`` you need to make a swap `ERC20 - > Remprotocol <https://remme.io/blog/remchain-mainnet-live>`_,
       you can swap tokens back any time.
-    | To use the ``Remchain testnet`` you need to create account and get tokens from ``FaucetBot``, here is the `instruction <remme.io>`_.
+    | To use the ``Remchain testnet`` you need to create account and get tokens from ``FaucetBot``, here is the `instruction <deploy-to-testchain.html>`_.

@@ -11,7 +11,7 @@ Step 1: Create Test Accounts
 
 .. note::
     To create an account on a ``Local Testnet``, a ``development key`` must already be imported in your wallet.
-    How to do this you can find `here <http://0.0.0.0:8080/developers/development-wallet-configuration.html#step-6-import-the-development-key>`_.
+    How to do this you can find `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
 
 To create test accounts use following commands:
 
@@ -31,7 +31,7 @@ It will return something like:
 .. note::
     ``PUBLIC_KEY`` - its a your public key that you already generate.
     If you did not generate a key go back to section
-    `Development Wallet Configuration <http://0.0.0.0:8080/developers/development-wallet-configuration.html>`_.
+    `Development Wallet Configuration <development-wallet-configuration.html>`_.
     Replace ``PUBLIC_KEY`` to the yous public key.
 
 The basic account creation interface for ``remcli`` looks like this:
@@ -63,8 +63,8 @@ The basic account creation interface for ``remcli`` looks like this:
       --max-net-usage UINT        set an upper limit on the net usage budget, in bytes, for the transaction (defaults to 0 which means no limit)
       --delay-sec UINT            set the delay_sec seconds, defaults to 0s
 
-Step 2: Get Test accounts
-=========================
+Step 2: Get Test account
+========================
 Any ``Remprotocol`` Account contains the ``public keys`` linked to specific authorizations.
 Flexible control of authorizations using account permissions allows you to divide account control
 between certain actions for a group of people.

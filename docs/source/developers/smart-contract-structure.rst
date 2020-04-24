@@ -2,7 +2,7 @@
 Smart Contract Structure
 ########################
 
-In this tutorial, we will split the contract `name_validator <http://0.0.0.0:8080/developers/first-smart-contract.html>`_
+In this tutorial, we will split the contract `name_validator <first-smart-contract.html>`_
 into files and compile it. To create the skeleton of your project, use ``eosio-init`` command line tool.
 
 .. note::
@@ -97,7 +97,7 @@ Before that, we have already created a contract:
 
 .. note::
     We will not discuss the details of the implementation of the contract, about the implementation you can read
-    `here <http://0.0.0.0:8080/developers/first-smart-contract.html>`_.
+    `here <first-smart-contract.html>`_.
 
 .. code-block:: c
 

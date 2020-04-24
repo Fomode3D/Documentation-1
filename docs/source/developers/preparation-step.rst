@@ -33,7 +33,7 @@ Step 2: Install eosio.cdt
 =========================
 
 .. warning::
-    If you have versions of eosio.cdt prior to 1.3.0 installed on your system, please uninstall before proceeding.
+    If you have versions of eosio.cdt prior to 1.3.0 installed on your system, please, uninstall before proceeding.
 
 Ubuntu 16.04/18.04
 ------------------
@@ -106,7 +106,4 @@ MacOs
 .. note::
     - To install the latest version, go to `Remprotocol releases <https://github.com/Remmeauth/remprotocol/releases/>`_.
 
-    - How to `build Remprotocol from source <http://0.0.0.0:8080/producers/install-remprotocol.html#install-from-source>`_.
-
-
-
+    - How to `build Remprotocol from source <../producers/install-remprotocol.html#install-from-source>`_.

@@ -34,7 +34,7 @@ Create a skeleton of a new project
 
 .. note::
     If you are not familiar with the structure of a smart contract, you can get acquainted
-    `here <http://0.0.0.0:8080/developers/smart-contract-structure.html>`_.
+    `here <smart-contract-structure.html>`_.
 
 Let's create a contract skeleton:
 
@@ -213,7 +213,7 @@ Now, let's denote the actions that we have already defined above.
         uint64_t primary_key()const { return balance.symbol.code().raw(); }
      };
 
-| In this multiple index table declaration, a new type called asset is used. An ``asset`` is a type designed to
+| In this multiple index table declaration, a new type called ``asset`` is used. An ``asset`` is a type designed to
   represent a digital token ``asset``. See more details in the
   `asset reference documentation <https://developers.eos.io/manuals/eosio.cdt/latest/structeosio_1_1asset>`_.
 | To use type ``asset`` add include:
@@ -1039,13 +1039,17 @@ deduct ``received_value`` from ``seller`` and increase him ``payable_value``:
 Build exchange contract
 =======================
 
-.. code-block:: console
-
-    $ cd build
+To compile our contract go to the root of the ``exchanger`` directory, then:
 
 .. code-block:: console
 
-    $ cmake .. && make
+    $ cd build && cmake ..
+
+Then, run ``make`` in ``build`` directory:
+
+.. code-block:: console
+
+    $ make
 
 It will return something like:
 
