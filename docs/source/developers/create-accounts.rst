@@ -11,16 +11,16 @@ Step 1: Create Test Accounts
 
 .. note::
     To create an account on a ``Local Testnet``, a ``development key`` must already be imported in your wallet.
-    How to do this you can find `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
+    You can learn how to do this `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
 
-To create test accounts use following commands:
+To create test accounts use the following commands:
 
 .. code-block:: console
 
     $ remcli create account rem alice PUBLIC_KEY
     $ remcli create account rem bob PUBLIC_KEY
 
-It will return something like:
+This will return something like:
 
 .. code-block:: console
 
@@ -73,7 +73,7 @@ There are two basic types of permissions in ``Remprotocol``:
 
 - ``owner`` - primary permission with full control over your account allowing you to change/add other permissions and all other basic actions.
 
-- ``active`` - secondary permission with basic control over your account allowing you to send/receive transaction.
+- ``active`` - secondary permission with basic control over your account allowing you to send/receive transactions.
 
 .. warning::
     For security reasons, use different keys for ``Active/Owner`` on a ``PRODUCTION`` Network.
