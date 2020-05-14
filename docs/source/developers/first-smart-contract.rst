@@ -45,7 +45,7 @@ Add a public access specifier and a using-declaration. The ``using`` declaration
           using contract::contract;
     };
 
-The logic of the behavior of the contract determines the action. We will write an action that print whether
+The logic of the behavior of the contract determines the action. We will write an action that prints whether
 such an account exists on the ``Remchain``.
 
 .. note::
@@ -69,9 +69,9 @@ such an account exists on the ``Remchain``.
     };
 
 | EOSIO provides many useful types and methods for a contracts.
-| Type `name <https://developers.eos.io/manuals/eosio.cdt/latest/structeosio_1_1name>`_ define username in ``Remchain``.
+| Type `name <https://developers.eos.io/manuals/eosio.cdt/latest/structeosio_1_1name>`_ defines username in ``Remchain``.
 | Function `check() <https://developers.eos.io/manuals/eosio.cdt/latest/namespaceeosio#function-check-16>`_
-  is assert if the predicate fails and use the supplied message.
+  is asserted if the predicate fails and uses the supplied message.
 | Function `is_account() <https://developers.eos.io/manuals/eosio.cdt/latest/group__action/#function-is_account>`_
   verifies that ``user`` is an existing account, the return type is ``bool``.
 
@@ -145,7 +145,7 @@ It will return something like:
 Deploy contract to account
 ==========================
 
-To start, you need to unlock the your wallet:
+To start, you need to unlock your wallet:
 
 .. code-block:: console
 
@@ -210,7 +210,7 @@ The interface for call actions from the contract is as follows:
       -r,--ref-block TEXT         set the reference block num or block id used for TAPOS (Transaction as Proof-of-Stake)
       --use-old-rpc               use old RPC push_transaction, rather than new RPC send_transaction
       -p,--permission TEXT ...    An account and permission level to authorize, as in 'account@permission'
-      --max-cpu-usage-ms UINT     set an upper limit on the milliseconds of cpu usage budget, for the execution of the transaction (defaults to 0 which means no limit)
+      --max-cpu-usage-ms UINT     set an upper limit in milliseconds of cpu usage budget, for the execution of the transaction (defaults to 0 which means no limit)
       --max-net-usage UINT        set an upper limit on the net usage budget, in bytes, for the transaction (defaults to 0 which means no limit)
       --delay-sec UINT            set the delay_sec seconds, defaults to 0s
 
@@ -230,7 +230,7 @@ The interface for call actions from the contract is as follows:
     #     validator <= validator::validatename      {"username":"testaccount1"}
     warning: transaction executed locally, but may not be confirmed by the network yet         ]
 
-| Now, let's test the wrong account name, account name which is less than 12 characters.
+| Now, let's test the wrong account name - an account name which is less than 12 characters.
 | This should return an error: ``account name must be 12 characters``
 
 .. code-block:: console
