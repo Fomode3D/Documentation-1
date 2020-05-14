@@ -70,4 +70,4 @@ Remprotocol Testnet
 .. note::
     | To use the ``Remchain mainnet`` you need to make a swap `ERC20 - > Remprotocol <https://remme.io/blog/remchain-mainnet-live>`_,
       you can swap tokens back any time.
-    | To use the ``Remchain testnet`` you need to create account and get tokens from ``FaucetBot``, here is the `instruction <deploy-to-testchain.html>`_.
+    | To use the ``Remchain testnet`` you need to create account and get tokens from ``FaucetBot``, here are the `instructions <deploy-to-testchain.html>`_.
