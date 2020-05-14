@@ -4,7 +4,7 @@ Preparation step
 
 Disclaimer
 ==========
-There are a variety of tools which require to have basic knowledge on how to use them in the terminal.
+There are a variety of tools which require you to have basic knowledge on how to use them in the terminal.
 
 Step 1: Install dependencies
 ============================
