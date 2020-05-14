@@ -31,7 +31,7 @@ Step 2: Create Account for Contract
 
 .. note::
     To create an account on a ``Local Testnet``, a ``development key`` must already be imported in your wallet.
-    How to do this you can find `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
+    You can learn how to do this `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
 
 Crete ``rem.token`` account
 
@@ -61,10 +61,10 @@ Step 5: Create and Issue Tokens
 ===============================
 
 To create a new token, call ``create`` action with the correct parameters.
-``create`` action is accept 2 arguments:
+``create`` action will accept 2 arguments:
 
 - ``issuer`` - an account that has the right to issue or burning tokens. In our case, this ``alice``.
-- ``maximum supply`` - this is the maximum amount that can be issued for a given symbol. In our case, this ``SYS``.
+- ``maximum supply`` - this is the maximum amount that can be issued for a given symbol. In our case, this is ``SYS``.
 
 .. code-block:: console
 
@@ -96,7 +96,7 @@ It will return something like:
 Step 6: Transfer tokens
 =======================
 
-Let's transfer some tokens to bob, we use the ``transfer`` action:
+To transfer some tokens to bob, we use the ``transfer`` action:
 
 .. code-block:: console
 
@@ -118,7 +118,7 @@ To check ``bob`` balance:
 
     $ remcli get currency balance rem.token bob SYS
 
-``bob`` balanse is:
+``bob`` balance is:
 
 .. code-block:: bash
 
