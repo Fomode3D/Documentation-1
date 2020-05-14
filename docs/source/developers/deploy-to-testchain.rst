@@ -34,8 +34,7 @@ Step 3: Create Contract Account
 ===============================
 
 .. note::
-    To get new tokens on ``Testchain`` you should click on |faucet_bot_reference| ``Request a new batch of tokens``,
-    this is necessary to create an contract account.
+    To get new tokens on ``Testchain`` you should click on |faucet_bot_reference| ``Request a new batch of tokens``. This is necessary to create an contract account.
 
 .. topic::
     To create new account on ``Testchain`` use ``remcli sysytem newaccount``:
@@ -82,7 +81,7 @@ Step 3: Create Contract Account
     $ remclit wallet import
 
 .. note::
-    Before create contract account unlock your wallet.
+    Before creating a contract account, unlock your wallet.
 
 **Let's create a contract account and stake** ``1000.0000 REM``:
 
@@ -90,7 +89,7 @@ Step 3: Create Contract Account
 
     $ remcli -u https://testchain.remme.io/ system newaccount CREATOR namevalidatr PUBLIC_KEY --stake "1000.0000 REM" --transfer
 
--u      this is a flag that indicates the address of the node to which your transaction will be sent to.
+-u      this is a flag that indicates the address of the node to which your transaction will be sent.
 
 It will return something like:
 
@@ -114,7 +113,7 @@ Step 3: Deploy Smart Contract to Testchain
 ==========================================
 
 .. note::
-    There is no need to run a full node to develop smart contracts, enough to know the address of one of the network nodes.
+    There is no need to run a full node to develop smart contracts; it is enough to know the address of one of the network nodes.
     Information about the ``Remprotocol Testnet`` services we have already indicated
     `here <prerequisites.html#remprotocol-testnet>`_.
 
