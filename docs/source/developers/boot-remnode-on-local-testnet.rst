@@ -70,7 +70,7 @@ Step 2: Start remnode
     --verbose-http-errors >> remnode.log 2>&1 &
 
 .. warning::
-    In the above configuration, CORS is enabled for * for development purposes only, you should never enable CORS for *
+    In the above configuration, CORS is enabled * for development purposes only, you should never enable CORS *
     on a node that is publicly accessible!
 
 .. note::
