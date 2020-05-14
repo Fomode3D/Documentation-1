@@ -4,7 +4,7 @@ Node Configuration
 
 Step 1: Download remchain settings
 ==================================
-Get the genesis.json file that contains configuration the REMChain network
+Get the genesis.json file that contains configuration of the REMChain network
 
 .. code-block:: console
 
@@ -40,12 +40,12 @@ Create ``config/config.ini`` and put the following settings into it:
     reversible-blocks-db-size-mb = 10480
 
 These config options should get you into the basic operation mode with your node API available at port ``8888``.
-P2p-peer-address points to the other nodes where to fetch the new blocks from (you may specify multiple entries,
+P2p-peer-address points to the other nodes where the new blocks are fetched from (you may specify multiple entries,
 ``p2p.remchain.remme.io:2087`` is the address of a node hosted by ``Remme``).
 
 .. note::
     ``p2p-peer-address = Add someone else’s node here who you trust`` - this means you need to insert the address of
-    the node that up-to-date and whom you trust.
+    the node that's up-to-date and which you trust.
 
 Step 3: Create and Run Wallet
 =============================
