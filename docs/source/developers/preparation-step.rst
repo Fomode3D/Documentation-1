@@ -33,7 +33,7 @@ Step 2: Install eosio.cdt
 =========================
 
 .. warning::
-    If you have versions of eosio.cdt prior to 1.3.0 installed on your system, please, uninstall before proceeding.
+    If you have versions of eosio.cdt prior to 1.3.0 installed on your system, please uninstall before proceeding.
 
 Ubuntu 16.04/18.04
 ------------------
@@ -64,7 +64,7 @@ MacOs
     $ brew install eosio.cdt
 
 .. note::
-    To install ``eosio.cdt`` from source you can read instruction
+    To install ``eosio.cdt`` from source you can read instructions
     `here <https://developers.eos.io/welcome/latest/getting-started/development-environment/install-the-CDT/#install-from-source>`_.
     Node should be configured with at least 2 CPUs (does not have to be two physical ones) and 8G of memory to avoid compilation errors.
 
