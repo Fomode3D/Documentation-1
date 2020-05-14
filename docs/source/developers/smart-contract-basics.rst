@@ -2,8 +2,8 @@
 Smart Contract Basics
 #####################
 
-A smart contract in ``Remprotocol`` consist of ``actions`` and ``persistent storage`` (tables).
-The contract can perform all the basic actions as a regular account, that are determined by its logic.
+A smart contract in ``Remprotocol`` consists of ``actions`` and ``persistent storage`` (tables).
+The contract can perform all the basic actions as a regular account that are determined by its logic.
 
 Action
 ======
@@ -11,7 +11,7 @@ Action
 Push Action Interface
 =====================
 
-``Actions`` determine the basic functionality of your smart contract that affect the state of the network.
+``Actions`` determine the basic functionality of your smart contract that affects the state of the network.
 
 .. code-block:: console
 
@@ -44,7 +44,7 @@ Permission System
         });
     }
 
-| You can find more information about the `Permission System <https://developers.eos.io/welcome/latest/protocol/accounts_and_permissions>`_.
+| You can find more information about the `Permission System <https://developers.eos.io/welcome/latest/protocol/accounts_and_permissions>`_ here.
 
 Persist Data
 ============
