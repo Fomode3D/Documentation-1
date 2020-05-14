@@ -2,7 +2,7 @@
 #
 # Configuration file for the Sphinx documentation builder.
 #
-# This file does only contain a selection of the most common options. For a
+# This file only contains a selection of the most common options. For a
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
@@ -10,7 +10,7 @@
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
+# documentation root, use os.path.abspath to make it absolute, as shown here.
 #
 # import os
 # import sys
@@ -35,7 +35,7 @@ release = '0.1.0'
 #
 # needs_sphinx = '1.0'
 
-# Add any Sphinx extension module names here, as strings. They can be
+# Add any Sphinx extension module names here as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
@@ -47,7 +47,7 @@ extensions = [
 templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
-# You can specify multiple suffix as a list of string:
+# You can specify multiple suffixes as a list of strings:
 #
 # source_suffix = ['.rst', '.md']
 source_suffix = '.rst'
@@ -162,7 +162,7 @@ texinfo_documents = [
 # Bibliographic Dublin Core info.
 epub_title = project
 
-# The unique identifier of the text. This can be a ISBN number
+# The unique identifier of the text. This can be an ISBN number
 # or the project homepage.
 #
 # epub_identifier = ''
