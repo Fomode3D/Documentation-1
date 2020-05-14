@@ -56,7 +56,7 @@ memory, network, overview, processes.
 Technical notes
 ===============
 
-The following summarises some important technical considerations:
+The following summarizes some important technical considerations:
 
 1. The ``Elasticsearch`` instances uses a named volume ``esdata`` for data persistence between restarts. It exposes ``HTTP`` port ``9200`` for communication with other containers.
 2. Environment variable defaults can be found in the file ``.env``.
@@ -70,9 +70,9 @@ The following summarises some important technical considerations:
 Customising the Stack
 =====================
 
-With respect to the current example, we have provided a few simple entry points for customisation:
+With respect to the current example, we have provided a few simple entry points for customization:
 
-1. The example includes an ``.env`` file listing environment variables which alter the behaviour of the stack. These environment variables allow the user to change:
+1. The example includes ``.env`` file listing environment variables which alter the behaviour of the stack. These environment variables allow the user to change:
 
   a. ``ELASTIC_VERSION`` - the ``Elastic Stack`` version (default 7.2.0)
   b. ``ES_PASSWORD`` - the password used for authentication with the elastic user. This password is applied for all system users i.e. ``kibana`` and ``logstash_system``. Defaults to ``changeme``.
