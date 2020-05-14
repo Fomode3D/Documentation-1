@@ -45,13 +45,13 @@ Command ``remvault`` should return something like:
     remvault  wallet_manager.cpp:304 initialize_lock
 
 This is because another instance of ``remvault`` process might be running in the background.
-To fixed it run following command ``pkill remvault`` and try again ``remvault``.
+To fix it run the following command ``pkill remvault`` and try again ``remvault``.
 
 Step 2: Start remnode
 =====================
 .. note::
-    For running local testnet, make sure that you already import to your wallet ``development key``.
-    How to configure wallet you can find
+    For running local testnet, make sure that you've already imported to your wallet ``development key``.
+    To learn how to configure the wallet see
     `here <development-wallet-configuration.html#step-6-import-the-development-key>`_.
 
 .. code-block:: console
