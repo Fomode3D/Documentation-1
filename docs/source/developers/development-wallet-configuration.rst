@@ -9,7 +9,7 @@ Step 1: Create a Default Wallet
 ===============================
 To create a wallet use command ``remcli wallet create``.
 If using ``remcli`` in production, it's wise to instead use ``--to-file`` so your wallet password is not in your bash history.
-For development purpose you can use ``--to-console``.
+For development purposes you can use ``--to-console``.
 
 .. code-block:: console
 
@@ -30,7 +30,7 @@ For development purpose you can use ``--to-console``.
 Step 2: Open and Unlock Wallet
 ==============================
 
-Wallets are closed by default when starting a ``remvault`` instance, to begin, run the following:
+Wallets are closed by default when starting a ``remvault`` instance. To begin, run the following:
 
 .. code-block:: console
 
@@ -56,7 +56,7 @@ The console prints out that your default wallet is unlocked: ``Unlocked: default
 
 Step 3: Generate a private key
 ==============================
-The following command will be generate a private key.
+The following command will generate a private key.
 
 .. code-block:: console
 
