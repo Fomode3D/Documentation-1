@@ -61,11 +61,11 @@ To start build use:
 
         $ nohup ./scripts/eosio_build.sh -y > build.log &
 
-    The build process logs will be save in ``build.log``.
+    The build process logs will be saved in ``build.log``.
 
 .. note::
     Script will be save binaries files in ``~/eosio/REM_VERSION/bin/``.
-    To use ``remcli``, ``remvault``, ``remnode`` you should enter to this directory and run them from here or
+    To use ``remcli``, ``remvault``, ``remnode`` you should enter them to this directory and run them from here or
     you can add alias to bashrc.
 
 .. tip::
@@ -85,7 +85,7 @@ Add aliases to bashrc:
 
 .. note::
     ``REM_VERSION`` - check version of the built Remprotocol in the ``~/eosio/`` directory.
-    Replace in the commands above ``REM_VERSION`` to your remprotocol version.
+    Replace the commands above ``REM_VERSION`` with your remprotocol version.
 
 Step 3: Install Remprotocol
 ---------------------------
